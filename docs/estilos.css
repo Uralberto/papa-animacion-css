@@ -1,0 +1,63 @@
+:root {
+  --main-color-blue: #2337F1;
+  --color-blue1: #4262F3;
+  --color-blue2: #5E83F5;
+  --color-blue3: #7AA1F7;
+  --color-blue4: #98BDF9;
+  --color-blue5: #B6D4FB;
+  --color-blue6: #D7EAFC;
+  --main-color-darkblue: #272839;
+  --color-darkblue1: #262B59;
+  --color-darkblue2: #252E7D;
+  --color-darkblue3: #24309A;
+  --color-darkblue4: #2433b8;
+  --color-darkblue5: #2335D6;
+  --color-gray1: #F6F3F3;
+  --color-gray2: #e7e4e7;
+  --color-gray3: #B4B3B7;
+  --color-gray4: #919097;
+  --color-gray5: #6E6E78;
+  --color-gray6: #494956;
+}
+
+.containerDad {
+  width: 100%;
+  background-color: var(--color-gray1);
+  text-align: center;
+}
+
+
+.dadSVG {
+  padding: 5% 5% 5% 5%;
+  background-color: var(--color-gray6);
+
+
+}
+
+
+.dadSVG path:nth-child(n) {
+  transform-origin: center;
+  animation: dad 20s ease-in-out forwards;
+}
+
+@keyframes dad {
+  0% {
+    fill-opacity: 0;
+    stroke-width: 20;
+    stroke-dasharray: 40;
+  }
+  48% {
+    stroke-width: .1;
+    stroke-dasharray: none;
+    fill-opacity: 1;
+  }
+  52% {
+    fill-opacity: 0;
+    stroke-width: .1;
+    stroke-dasharray: none;
+  }
+  100% {
+    stroke-dasharray: 0;
+    fill-opacity: 1
+  }
+}
